@@ -1,0 +1,18 @@
+ /* font-family: name;
+	 src: url(assets/Font/HAP.TTF);
+ }*/
+ 
+ #js {
+	 padding: 10.5px !important;
+	 background-color: red;
+	 color: #55ee30;
+	 font-size: 25px;
+	 font-weight: bold;
+	 z-index: 2 !important;
+	 border-radius: 10px;
+ }
+ 
+ #js:hover {
+	 border: 1px solid red;
+	 padding: 10px !important;
+ }

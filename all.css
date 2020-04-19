@@ -1,0 +1,396 @@
+ @font-face {
+	 font-family: w3school;
+	 src: url(assets/font/w3school.ttf);
+ }
+ * {
+	 box-sizing: boreder-box;
+ }
+ 
+ body {
+	margin: 0px;
+    background-color: #40B3A2;	
+	font-family: Verdana,sans-serif;
+ }
+ 
+ 
+ #sitename {
+	 background-color: #E27D5F;
+     padding: 5px 50px;
+	 z-index: 3;
+ }
+ 
+ #sitename span {
+	 color: #FFF;
+	 font-size: 20px;
+	 position: absolute;
+	 right: 40px;
+	 top: 55px;
+ }
+ 
+ #logo {
+	 background-image: 
+	    url("assets/image/logo-notes.png");
+	 background-repeat: no-repeat;
+	 background-size: 255px 120px;
+	 background-position: -17px -23px;
+	 width: 200px;
+	 height: 70px;
+	 border-radius: 10px;
+ }
+ 
+ #nav {
+	 position: sticky;
+	 top: 0px;
+	 margin: 0px;
+	 width: 100%;
+	 height: 3.68vw;
+	 background-color: #85CDCA;
+	 font-size: 20px;
+	 font-family: arial;
+	 z-index: 5;
+	 
+ }
+ 
+ #nav ul {
+	 list-style-type: none;
+	 margin: 0px;
+	 padding: 0 10px;
+ }
+ 
+ #nav ul li {
+	 margin: 0px;
+	 padding: 17px 13px 8px 13px;
+	 display: inline-block;
+	 float: left;
+	 z-index: 0;
+ }
+ 
+ #nav ul li:hover {
+	 padding: 10.5px;
+	 background-color: blue;
+	 color: #55EE30;
+	 font-size: 25px;
+	 font-weight: bold;
+	 z-index: 1;
+	 border-radius: 10px;
+ }
+ 
+
+ 
+ header a, nav a {
+	 text-decoration: none;
+	 color: #000;
+ }
+ 
+ .nav-float-right {
+	 float: right;
+ }
+ 
+ #dark-mode-button {
+	 background-image: url("assets/image/icon-white-button.png");
+	 width: 50px;
+	 height: 50px;
+	 background-repeat: no-repeat;
+	 background-size: 50px 50px;
+	 background-position: 0px 0px;
+ }
+ 
+ #dark-mode-button:hover {
+	 background-image: url("assets/image/icon-dark-button.png");
+ }
+ 
+  #white-mode-button {
+	 background-image: url("assets/image/icon-dark-button.png");
+	 width: 50px;
+	 height: 50px;
+	 background-repeat: no-repeat;
+	 background-size: 50px 50px;
+	 background-position: 0px 0px;
+	 position: relative;
+	 left: 0px;
+	 display: none;
+ }
+ 
+ #white-mode-button:hover {
+	 background-image: url("assets/image/icon-white-button.png");
+ }
+ 
+ #search[type=search]{
+	 padding: 10px 30px;
+	 background-image: url("assets/image/search-icon.png");
+	 background-repeat: no-repeat;
+	 background-size: 22px 22px;
+	 background-position: 4px 4px;
+	 height: 30px;
+	 margin: 13px;
+     border-radius: 10px;
+	 border: 1px solid #85CDCA;
+ }
+ 
+ #search:focus {
+	 border: 1px solid #85CDCA;
+	 outline: 1px solid #85CDCA;
+	 border-radius: 30px;
+ }
+ 
+ aside {
+	 position: -webkit-sticky;
+	 position: sticky;
+	 top: 55px;
+	 margin: 5px;
+	 padding: 0px;
+	 background-color: #E8A87C;
+	 float: left;
+	 width: 22%;
+	 height: 91vh;
+	 overflow-y: scroll;
+	 overflow-x: hidden;
+	 border-radius: 10px;
+	 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.7), 0 2px 10px 0 rgba(0,0,0,0.7);
+	 clear: both;
+ }
+	  
+ #w3school {
+	 font-family: w3school;
+	 font-size: 37px;
+	 letter-spacing: 3px;
+	 color: #555;
+	 background-color: #fff;
+	 padding: 5px;
+	 position: relative;
+	 width: auto;
+	 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.7), 0 2px 10px 0 rgba(0,0,0,0.7);
+	 border-radius: 10px 0 0px 10px;
+	 z-index: 0;
+	 display: block;
+ }
+	  
+ #w3school span {
+	 color: #4CAF50;
+ }
+	  
+ aside .ref {
+	 font-size: 25px;
+	 padding: 5px 10px;
+	 position: relative;
+	 left: 10px;
+	 color: #FFF;
+	 font-weight: 400;
+ }
+	  
+ aside ul {
+	 margin: 15px 0;
+	 padding: 0px;
+	 list-style-type: none;
+ }
+	  
+ aside a {
+	 text-decoration: none;
+	 color: #000;
+	 
+ }
+	  
+ aside li {
+	 margin: 0px;
+     padding: 5px;	
+	 position: relative;
+	 text-indent: 20px;
+     font-size: 18px;
+     color: #000; 	 
+	 font-weight: 400;
+ }
+ 
+ aside li .notes-link {
+	text-indent: 0px; 
+	padding: 3px 5px;
+	margin: 0px;
+	position: relative;
+	float: right;
+ }
+ 
+ aside li:hover {
+	 background-color: #CCC;
+ }
+ 
+ main h1 {
+	 text-align: center;
+	 font-size: 80px;
+	 font-family: "Arial";
+	 padding: 5px;
+	 margin: 10px 0px -50px 0px !important;
+	 font-weight: 400;
+ }
+ 
+ 
+ #contener {
+	 width: 75%;
+	 float: left;
+ }
+ 
+ section {
+	 margin: 50px 10px 0 10px;
+	 width: 100%;
+	 padding: 50px 0 0 0;
+ }
+ 
+ .notes {
+	 width: 100%;
+	 font-weight: 400;
+ }
+ 
+ #previous,#next {
+	 padding: 10px 12px;
+	 text-decoration: none;
+	 color: #FFF;
+	 background-color: #55EE30;
+	 font-size: 18px;
+	 position: relative;
+ }
+ 
+ #previous {
+	 float: left;
+	 top: 0px;
+ }
+ 
+ #next {
+	 float: right;
+     top: 0px;
+ }
+ 
+ .heading {
+	 width: 100%;
+ }
+ 
+ .heading::after {
+	 content: "";
+	 display: table;
+	 clear: both;
+ }
+ 
+ .notes h2 {
+	 font-size: 35px;
+	 font-weight: 200;
+	 text-align: center;
+	 padding: 10px 0;
+	 margin: 10px 0 50px 0;
+ }
+ 
+ .notes ul {
+	 background-color: #D4EDDA;
+	 list-style-type: none;
+	 padding: 10px 20px;
+ }
+ 
+ .notes li {
+	 padding: 10px;
+ }
+ 
+ .example {
+	 margin: 10px 0;
+	 width: auto;
+	 height: auto;
+	 background-color: #F1F1F1;
+	 padding: 16px 16px 25px 16px;
+	 border-radius: 10px;
+	 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.7), 0 2px 10px 0 rgba(0,0,0,0.7);
+ }
+	
+ .w3-link {
+	 color: #FFF;
+	 background-color: #616161;
+	 text-decoration: none;
+	 display: inline-block;
+	 margin: 20px 5px;
+	 padding: 8px 12px;
+ }
+ 
+ .w3-link:hover{
+	 color: #000;
+	 background-color: #CCC;
+ }
+ 
+ .notes-link {
+	 color: #FFF;
+	 background-color: #55EE30;
+	 text-decoration: none;
+	 display: inline-block;
+	 margin: 20px 5px;
+	 padding: 8px 12px;
+ }
+ 
+ .notes-link:hover,#previous:hover,#next:hover {
+	 background-color: blue;
+	 color: #55EE30;
+ }
+ 
+ 
+ 
+
+ .code {
+	 background-color: #FFF;
+	 width: 95%;
+	 border-left: 4px solid #4CAF50;
+	 padding: 10px 12px;
+	 font-size: 16px;
+	 font-family: consolas,"courier new";
+	 word-wrap: break-word;
+	 line-height: 1.5;
+ }
+ 
+ .tagcolorname , .cssselectorcolor , .sqlstringcolor, .jsstringcolor{
+	 color: brown;
+ }
+ 
+ .tagcolor , .attributevaluecolor , .jskeywordcolor , .csspropertyvaluecolor , .sqlkeywordcolor {
+	 color: mediumblue;
+ }
+ 
+ .attributecolor , .csspropertycolor {
+	 color: red;
+ }
+ 
+ .text, .jscolor , .equal , .cssbracketcolor, .sqlcolor {
+	 color: black;
+ }
+ 
+ .try {
+	 padding: 8px 16px;
+	 margin: 5px 5px 5px 0;
+	 font-size: 16px;
+	 color: #FFF ;
+	 background-color: #4CAF50;
+	 text-decoration: none;
+	 overflow: hidden;
+ }
+ 
+ .output {
+	 margin: 10px 0;
+	 width: auto;
+	 height: auto;
+	 background-color: #FFF;
+	 padding: 16px 16px 25px 16px;
+	 border-radius: 10px;
+	 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.7), 0 2px 10px 0 rgba(0,0,0,0.7);
+	 font-family: sarif;
+ }
+ 
+ footer {
+	 width: 100%;
+	 height: 30px;
+	 padding: 10px;
+	 background-color: #E27D60;
+	 font-family: arial;
+	 font-size: 20px;
+	 text-align: center;
+ }
+ 
+
+ #last {
+	 clear: both;
+	 margin-bottom: 10px;
+ }
+ 
+ .example h3, .example h2 {
+	 font-size: 23px;
+	 font-weight: 400;
+ }

@@ -1,0 +1,1542 @@
+<!DOCTYPE html> 
+ <html>
+  <head>
+	<title> JavaScript Notes </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="js.css">
+	<link rel="stylesheet" type="text/css" href="all.css">
+	<link rel="icon" type="image/png" href="assets/image/logo-notes-favicon.png">
+  </head>
+	<body>
+                     	<!-- Header part -->
+	<header id="sitename"> 
+	  <a href="index.html">
+	  <img src="assets/image/spacers-image.png" id="logo" />
+	  </a>
+	  <span>I Picked My Topic, Now I'm Making Notes. </span>
+	</header>
+                            <!-- nav part -->
+    <nav id="nav"> 
+	  <ul>
+	  <a href="index.html" class="nav">
+	  <li id="home">Home</li>
+	  </a>
+	  <a href="html.html" class="nav">
+	  <li id="html">HTML</li>
+	  </a>
+	  <a href="css.html" class="nav">
+	  <li id="css">CSS</li>
+	  </a>
+	  <a href="js.html" class="nav">
+	  <li id="js">JavaScript</li>
+	  </a>
+	  <a href="about.html" class="nav">
+	  <li id="about">About</li>
+	  </a>
+	  <input type="search" placeholder="Search.." class="nav-float-right" id="search" />
+	  <img class="nav-float-right" src="assets/image/spacers-image.png" id="dark-mode-button" onclick="darkMode()" />
+	  <img class="nav-float-right" src="assets/image/spacers-image-0.png" id="white-mode-button" onclick="whiteMode()" />
+	  </ul>
+	 </nav>
+	 
+	 
+	 <aside> 
+	  <a id="w3school" href="https://www.w3schools.com" target="_blank">w3school<span>.com</span>
+	  </a> <br />
+	  
+	  <span class="ref"> JS Tutorial </span> <!-- JS Tutorial -->
+	  
+	  <ul>
+	  <a href="https://www.w3schools.com/js/default.asp" target ="_blank">
+	  <li> JS HOME <a href="js.html#JSHOME" class="notes-link" title="JS HOME Notes">Notes</a></li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_intro.asp" target ="_blank">
+	  <li> JS Introduction <a href="js.html#JSINTROD" class="notes-link" title="JS Introduction Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_whereto.asp" target ="_blank">
+	  <li> JS Where To <a href="js.html#JSWHETO"  class="notes-link" title="JS Where To Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_output.asp" target ="_blank">
+	  <li> JS Output <a href="js.html#JSOUTPUT" class="notes-link" title="JS Output Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_statements.asp" target ="_blank">
+	  <li> JS Statements <a href="js.html#JSSTATEM" class="notes-link" title="JS Statement Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_syntax.asp" target ="_blank">
+	  <li> JS Syntax <a href="js.html#JSSYNTAX" class="notes-link" title="JS Syntax Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_comments.asp" target ="_blank">
+	  <li> JS Comments <a href="js.html#JSCOMMEN" class="notes-link" title="JS Comments Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_variables.asp" target ="_blank">
+	  <li> JS Variables <a href="js.html#JSVARIAB" class="notes-link" title="JS Variables Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_operators.asp" target ="_blank">
+	  <li> JS Operators <a href="js.html#JSOPERAT" class="notes-link" title="JS Operators Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_arithmetic.asp" target ="_blank">
+	  <li> JS Arithmetic <a href="js.html#JSARITHM" class="notes-link" title="JS Arithmetic Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_assignment.asp" target ="_blank">
+	  <li> JS Assignment <a href="js.html#JSASSIGN" class="notes-link" title="JS Assignment Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_datatypes.asp" target ="_blank">
+	  <li> JS Data Types <a href="js.html#JSDATTYP" class="notes-link" title="JS Data Types Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_functions.asp" target ="_blank">
+	  <li> JS Functions <a href="js.html#JSFUNCTI" class="notes-link" title="JS Functions Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_objects.asp" target ="_blank">
+	  <li> JS Objects <a href="js.html#JSOBJECT" class="notes-link" title="JS Objects Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_events.asp" target ="_blank">
+	  <li> JS Events <a href="js.html#JSEVENTS" class="notes-link" title="JS Events Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_strings.asp" target ="_blank">
+	  <li> JS Strings <a href="js.html#JSSTRING" class="notes-link" title="JS Strings Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_string_methods.asp" target ="_blank">
+	  <li> JS String Methods <a href="js.html#JSSTRMET" class="notes-link" title="JS String Methods Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_numbers.asp" target ="_blank">
+	  <li> JS Numbers <a href="js.html#JSNUMBER" class="notes-link" title="JS Numbers Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_number_methods.asp" target ="_blank">
+	  <li> JS Number Methods <a href="js.html#JSNUMMET" class="notes-link" title="JS Number Methods Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_arrays.asp" target ="_blank">
+	  <li> JS Arrays <a href="js.html#JSARRAYS" class="notes-link" title="JS Arrays Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_array_methods.asp" target ="_blank">
+	  <li> JS Array Methods <a href="js.html#JSARRMET" class="notes-link" title="JS Array Methods Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_array_sort.asp" target ="_blank">
+	  <li> JS Array Sort <a href="js.html#JSARRSOR" class="notes-link" title="JS Array Sort Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_array_iteration.asp" target ="_blank">
+	  <li> JS Array Iteration <a href="js.html#JSARRITE" class="notes-link" title="JS Array Iteration Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_dates.asp" target ="_blank">
+	  <li> JS Dates <a href="js.html#JSDATES" class="notes-link" title="JS Dates Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_date_formats.asp" target ="_blank">
+	  <li> JS Date Formats <a href="js.html#JSDATFOR" class="notes-link" title="JS Date Formats Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_date_methods.asp" target ="_blank">
+	  <li> JS Date Get Methods <a href="js.html#JSDAGEME" class="notes-link" title="JS Date Get Methods Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_date_methods_set.asp" target ="_blank">
+	  <li> JS Date Set Methods <a href="js.html#JSDASEME" class="notes-link" title="JS JS Date Set Methods Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_math.asp" target ="_blank">
+	  <li> JS Math <a href="js.html#JSMATH" class="notes-link" title="JS Math Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_random.asp" target ="_blank">
+	  <li> JS Random <a href="js.html#JSRANDOM" class="notes-link" title="JS Random Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_booleans.asp" target ="_blank">
+	  <li> JS Booleans <a href="js.html#JSBOOLEA" class="notes-link" title="JS Booleans Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_comparisons.asp" target ="_blank">
+	  <li> JS Comparisons <a href="js.html#JSCOMPAR" class="notes-link" title="JS Comparisons Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_if_else.asp" target ="_blank">
+	  <li> JS Conditions <a href="js.html#JSCONDIT" class="notes-link" title="JS Conditions Notes">Notes</a> </li>
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_switch.asp" target ="_blank">
+	  <li> JS Switch <a href="js.html#JSSWITCH" class="notes-link" title="JS Switch Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_loop_for.asp" target ="_blank">
+	  <li> JS Loop For <a href="js.html#JSLOOFOR" class="notes-link" title="JS Loop For Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_loop_while.asp" target ="_blank">
+	  <li> JS Loop While <a href="js.html#JSLOOWHI" class="notes-link" title="JS Loop While Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_break.asp" target ="_blank">
+	  <li> JS Break <a href="js.html#JSBREAK" class="notes-link" title="JS Break Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_type_conversion.asp" target ="_blank">
+	  <li> JS Type Conversion <a href="js.html#JSTYPCON" class="notes-link" title="JS Type Conversion Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_bitwise.asp" target ="_blank">
+	  <li> JS Bitwise <a href="js.html#JSBITWIS" class="notes-link" title="JS Bitwise Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_regexp.asp" target ="_blank">
+	  <li> JS RegExp <a href="js.html#JSREGEXP" class="notes-link" title="JS RegExp Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_errors.asp" target ="_blank">
+	  <li> JS Errors <a href="js.html#JSERRORS" class="notes-link" title="JS Errors Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_scope.asp" target ="_blank">
+	  <li> JS Scope <a href="js.html#JSSCOPE" class="notes-link" title="JS Scope Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_hoisting.asp" target ="_blank">
+	  <li> JS Hoisting <a href="js.html#JSHOISTI" class="notes-link" title="JS Hoisting Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_strict.asp" target ="_blank">
+	  <li> JS Strict Mode <a href="js.html#JSSTRMOD" class="notes-link" title="JS Strict Mode Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_this.asp" target ="_blank">
+	  <li> JS this Keyword <a href="js.html#JSTHIKEY" class="notes-link" title="JS this Keyword Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_let.asp" target ="_blank">
+	  <li> JS Let <a href="js.html#JSLET" class="notes-link" title="JS Let Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_const.asp" target ="_blank">
+	  <li> JS Const <a href="js.html#JSCONST" class="notes-link" title="JS Const Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_arrow_function.asp" target ="_blank">
+	  <li> JS Arrow Function <a href="js.html#JSARRFUN" class="notes-link" title="JS Arrow Function Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_classes.asp" target ="_blank">
+	  <li> JS Classes <a href="js.html#JSCLASS" class="notes-link" title="JS Classes Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_debugging.asp" target ="_blank">
+	  <li> JS Debugging <a href="js.html#JSDEBUGG" class="notes-link" title="JS Debugging Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_conventions.asp" target ="_blank">
+	  <li> JS Style Guide <a href="js.html#JSSTYGUI" class="notes-link" title="JS Style Guide Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_best_practices.asp" target ="_blank">
+	  <li> JS Best Practices <a href="js.html#JSBESPRA" class="notes-link" title="JS Best Practices Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_mistakes.asp" target ="_blank">
+	  <li> JS Mistakes <a href="js.html#JSMISTAK" class="notes-link" title="JS Mistakes Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_performance.asp" target ="_blank">
+	  <li> JS Performance <a href="js.html#JSPERFOR" class="notes-link" title="JS Performance Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_reserved.asp" target ="_blank">
+	  <li> JS Reserved Words <a href="js.html#JSRESWOR" class="notes-link" title="JS Reserved Words Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_versions.asp" target ="_blank">
+	  <li> JS Versions <a href="js.html#JSVERSIO" class="notes-link" title="JS Versions Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_es5.asp" target ="_blank">
+	  <li> JS Version ES5 <a href="js.html#JSVERES5" class="notes-link" title="JS Version ES5 Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_es6.asp" target ="_blank">
+	  <li> JS Version ES6 <a href="js.html#JSVERES6" class="notes-link" title="JS Version ES6 Notes">Notes</a> </li> 
+	  </a>
+	  <a href="https://www.w3schools.com/js/js_json.asp" target ="_blank">
+	  <li> JS JSON <a href="js.html#JSJSON" class="notes-link" title="JS JSON Notes">Notes</a> </li> 
+	  </a>
+	  </ul>
+	 </aside>
+	 <main id="contener">
+	 
+	    <h1> JavaScript Notes </h1> 
+	 
+	 <!-- JavaScript Home Notes -->
+	 
+	 <section id="JSHOME">
+	 <article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="#" id="previous"> < JS HOME </a>
+		<a href="js.html#JSINTROD" id="next"> Next > </a>
+	 </div>
+	<h2> JavaScript Tutorial </h2> 
+	<ul>
+	<li>JavaScript is the programming language of HTML and the Web.</li>
+	<li>JavaScript is easy to learn.</li>
+	<li>This tutorial will teach you JavaScript from basic to advanced.</li>
+	</ul>
+	</article>
+	<!-- Example:: -->
+	<article class="example">
+	<h3>Example: Showing How To Display Date And Time.</h3>
+	<div class="code">
+	<span class="tagcolorname">
+		<span class="tagcolor"><</span>!DOCTYPE 
+		<span class="attributecolor">html</span><span class="tagcolor">></span>
+		</span><br />
+			   
+		<span class="tagcolorname"><span class="tagcolor"><</span>html</span><span class="tagcolor">></span><br />
+			   
+		<span class="tagcolorname"><span class="tagcolor"><</span>body</span><span class="tagcolor">></span><br /><br />
+			   
+		<span class="tagcolorname"><span class="tagcolor"><</span>h2<span class="tagcolor">></span><span class="text">My First JavaScript<span class="tagcolor"><</span><span class="tagcolorname">/h2</span><span class="tagcolor">></span><br /><br />
+			   
+		<span class="tagcolor"><</span><span class="tagcolorname">button </span><span class="attributecolor">type</span><span class="jscolor">=</span><span class="attributevaluecolor">"button"</span><span class="attributecolor">onclick</span><span class="jscolor">=</span><span class="attributevaluecolor">"document.getElementById('demo').innerHTML = Date()"</span><span class="tagcolor">><span><span class="text">Click me to display Date and Time</span><span class="tagcolor"><</span><span class="tagcolorname">/button</span><span class="tagcolor">></span><br /> <br />
+		
+		<span class="tagcolorname"><span class="tagcolor"><</span>p <span class="attributecolor">id</span><span class="jscolor">=</span><span class="attributevaluecolor">"demo"</span><span class="tagcolor">></span><span class="text"><span class="tagcolor"><</span><span class="tagcolorname">/p</span><span class="tagcolor">></span><br /><br />
+			   
+		<span class="tagcolorname"><span class="tagcolor"><</span>/body</span><span class="tagcolor">></span><br />
+			   
+		<span class="tagcolorname"><span class="tagcolor"><</span>/html</span><span class="tagcolor">></span><br />
+	</div><br />
+	    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" class="try" target="_blank">Try it Yourself »</a>
+	</article>
+	
+	<article class="output">
+	
+	<h3>My First JavaScript</h3>
+
+    <button type="button"onclick="document.getElementById('demo_01').innerHTML = Date()">Click me to display Date and Time</button>
+
+    <p id="demo_01"></p>
+	</article>
+	</section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JSINTROD">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading" >
+	   <a href="js.html#JSHOME" id="previous"> < Previous </a>
+	   <a href="js.html#JSWHETO" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Where To Notes -->
+	
+	<section id="JSWHETO">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading" >
+	   <a href="js.html#JSINTROD" id="previous"> < Previous </a>
+	   <a href="js.html#JSOUTPUT" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Where To  </h2>
+	 
+	 </article>
+    </section>
+	<!-- JavaScript Output Notes -->
+	
+	<section id="JSOUTPUT">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading" >
+	   <a href="js.html#JSWHETO" id="previous"> < Previous </a>
+	   <a href="js.html#JSSTATEM" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Output  </h2>
+	 
+	 </article>
+    </section>
+	<!-- JavaScript Statements Notes -->
+	
+	<section id="JSSTATEM">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading" >
+	   <a href="js.html#JSOUTPUT" id="previous"> < Previous </a>
+	   <a href="js.html#JSSYNTAX" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Statements  </h2>
+	 
+	 </article>
+    </section>
+	<!-- JavaScript Syntax Notes -->
+	
+	<section id="JSSYNTAX">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading" >
+	   <a href="js.html#JSSTATEM" id="previous"> < Previous </a>
+	   <a href="js.html#JSCOMMEN" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Syntax  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Comments Notes -->
+	
+	<section id="JSCOMMEN">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSYNTAX" id="previous"> < Previous </a>
+	   <a href="js.html#JSVARIAB" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Comments  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Variables Notes -->
+	
+	<section id="JSVARIAB">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSCOMMEN" id="previous"> < Previous </a>
+	   <a href="js.html#JSOPERAT" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Variables  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Operators Notes -->
+	
+	<section id="JSOPERAT">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSVARIAB" id="previous"> < Previous </a>
+	   <a href="js.html#JSARITHM" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Operators  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Arithmetic Notes -->
+	
+	<section id="JSARITHM">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSOPERAT" id="previous"> < Previous </a>
+	   <a href="js.html#JSASSIGN" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Arithmetic  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Assignment Notes -->
+	
+	<section id="JSASSIGN">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARITHM" id="previous"> < Previous </a>
+	   <a href="js.html#JSDATTYP" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Assignment  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Data Types Notes -->
+	
+	<section  id="JSDATTYP">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSASSIGN" id="previous"> < Previous </a>
+	   <a href="js.html#JSFUNCTI" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Data Types  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Functions Notes -->
+	
+	<section id="JSFUNCTI">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDATTYP" id="previous"> < Previous </a>
+	   <a href="js.html#JSOBJECT" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Functions  </h2>
+	 
+	 </article>
+    </section>
+	<!-- JavaScript Objects Notes -->
+	
+	<section id="JSOBJECT">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSFUNCTI" id="previous"> < Previous </a>
+	   <a href="js.html#JSEVENTS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Objects  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Events Notes -->
+	
+	<section id="JSEVENTS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSOBJECT" id="previous"> < Previous </a>
+	   <a href="js.html#JSSTRING" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Events  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript String Notes -->
+	
+	<section id="JSSTRING">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSEVENTS" id="previous"> < Previous </a>
+	   <a href="js.html#JSSTRMET" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript String  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript String Methods Notes -->
+	
+	<section id="JSSTRMET">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSTRING" id="previous"> < Previous </a>
+	   <a href="js.html#JSNUMBER" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript String Methods  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Numbers Notes -->
+	
+	<section id="JSNUMBER">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSTRMET" id="previous"> < Previous </a>
+	   <a href="js.html#JSNUMMET" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Numbers  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Numbers Methods Notes -->
+	
+	<section id="JSNUMMET">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSNUMBER" id="previous"> < Previous </a>
+	   <a href="js.html#JSARRAYS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Numbers Methods  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Array Notes -->
+	
+	<section id="JSARRAYS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSNUMMET" id="previous"> < Previous </a>
+	   <a href="js.html#JSARRMET" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Array  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Array Methods Notes -->
+	
+	<section id="JSARRMET">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARRAYS" id="previous"> < Previous </a>
+	   <a href="js.html#JSARRSOR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Array Methods  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Array Sort Notes -->
+	
+	<section id="JSARRSOR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARRMET" id="previous"> < Previous </a>
+	   <a href="js.html#JSARRITE" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Array Sort  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Array Iteration Notes -->
+	
+	<section id="JSARRITE">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARRSOR" id="previous"> < Previous </a>
+	   <a href="js.html#JSDATES" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Array Iteration  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Dates Notes -->
+	
+	<section id="JSDATES">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARRITE" id="previous"> < Previous </a>
+	   <a href="js.html#JSDATFOR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Dates  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Dates Formats Notes -->
+	
+	<section id="JSDATFOR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDATES" id="previous"> < Previous </a>
+	   <a href="js.html#JSDAGEME" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Dates Formats  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Dates Get Methods Notes -->
+	
+	<section id="JSDAGEME">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDATFOR" id="previous"> < Previous </a>
+	   <a href="js.html#JSDASEME" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Dates Get Methods  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Dates Set Methods Notes -->
+	
+	<section id="JSDASEME">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDAGEME" id="previous"> < Previous </a>
+	   <a href="js.html#JSMATH" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Dates Set Methods  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Math Notes -->
+	
+	<section id="JSMATH">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDASEME" id="previous"> < Previous </a>
+	   <a href="js.html#JSRANDOM" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Math  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Random Notes -->
+	
+	<section id="JSRANDOM">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSMATH" id="previous"> < Previous </a>
+	   <a href="js.html#JSBOOLEA" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Random  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Booleans Notes -->
+	
+	<section id="JSBOOLEA">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSRANDOM" id="previous"> < Previous </a>
+	   <a href="js.html#JSCOMPAR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Booleans  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Comparisons Notes -->
+	
+	<section id="JSCOMPAR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSBOOLEA" id="previous"> < Previous </a>
+	   <a href="js.html#JSCONDIT" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Comparisons  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript conditions Notes -->
+	
+	<section id="JSCONDIT">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSCOMPAR" id="previous"> < Previous </a>
+	   <a href="js.html#JSSWITCH" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript conditions  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Switch Notes -->
+	
+	<section id="JSSWITCH">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSCONDIT" id="previous"> < Previous </a>
+	   <a href="js.html#JSLOOFOR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Switch  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Loop For Notes -->
+	
+	<section id="JSLOOFOR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSWITCH" id="previous"> < Previous </a>
+	   <a href="js.html#JSLOOWHI" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Loop For  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Loop While Notes -->
+	
+	<section id="JSLOOWHI">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSLOOFOR" id="previous"> < Previous </a>
+	   <a href="js.html#JSBREAK" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Loop While  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Break Notes -->
+	
+	<section id="JSBREAK">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSLOOWHI" id="previous"> < Previous </a>
+	   <a href="js.html#JSTYPCON" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Break  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Type Conversion Notes -->
+	
+	<section id="JSTYPCON">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSBREAK" id="previous"> < Previous </a>
+	   <a href="js.html#JSBITWIS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Type Conversion  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Bitwise Notes -->
+	
+	<section id="JSBITWIS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSTYPCON" id="previous"> < Previous </a>
+	   <a href="js.html#JSREGEXP" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Bitwise  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript RegExp Notes -->
+	
+	<section id="JSREGEXP">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSBITWIS" id="previous"> < Previous </a>
+	   <a href="js.html#JSERRORS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript RegExp  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Errors Notes -->
+	
+	<section id="JSERRORS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSREGEXP" id="previous"> < Previous </a>
+	   <a href="js.html#JSSCOPE" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Errors  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Scope Notes -->
+	
+	<section id="JSSCOPE">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSERRORS" id="previous"> < Previous </a>
+	   <a href="js.html#JSHOISTI" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Scope  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Hoisting Notes -->
+	
+	<section id="JSHOISTI">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSCOPE" id="previous"> < Previous </a>
+	   <a href="js.html#JSSTRMOD" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Hoisting  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Strict Mode Notes -->
+	
+	<section id="JSSTRMOD">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSHOISTI" id="previous"> < Previous </a>
+	   <a href="js.html#JSTHIKEY" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Strict Mode  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript This Keyword Notes -->
+	
+	<section id="JSTHIKEY">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSTRMOD" id="previous"> < Previous </a>
+	   <a href="js.html#JSLET" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript This Keyword  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Let Notes -->
+	
+	<section id="JSLET">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSTHIKEY" id="previous"> < Previous </a>
+	   <a href="js.html#JSCONST" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Let  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Const Notes -->
+	
+	<section id="JSCONST">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSLET" id="previous"> < Previous </a>
+	   <a href="js.html#JSARRFUN" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Const  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Arrow Function Notes -->
+	
+	<section id="JSARRFUN">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSCONST" id="previous"> < Previous </a>
+	   <a href="js.html#JSCLASS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Arrow Function  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Classes Notes -->
+	
+	<section id="JSCLASS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSARRFUN" id="previous"> < Previous </a>
+	   <a href="js.html#JSDEBUGG" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Classes  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Debugging Notes -->
+	
+	<section id="JSDEBUGG">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSCLASS" id="previous"> < Previous </a>
+	   <a href="js.html#JSSTYGUI" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Debugging  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Style Guide Notes -->
+	
+	<section id="JSSTYGUI">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSDEBUGG" id="previous"> < Previous </a>
+	   <a href="js.html#JSBESPRA" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Style Guide  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Best Practices Notes -->
+	
+	<section id="JSBESPRA">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSSTYGUI" id="previous"> < Previous </a>
+	   <a href="js.html#JSMISTAK" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Best Practices  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Mistakes Notes -->
+	
+	<section id="JSMISTAK">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSBESPRA" id="previous"> < Previous </a>
+	   <a href="js.html#JSPERFOR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Mistakes  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Performance Notes -->
+	
+	<section id="JSPERFOR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSMISTAK" id="previous"> < Previous </a>
+	   <a href="js.html#JSRESWOR" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Performance  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Reserved Words Notes -->
+	
+	<section id="JSRESWOR">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSPERFOR" id="previous"> < Previous </a>
+	   <a href="js.html#JSVERSIO" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Reserved Words  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Versions Notes -->
+	
+	<section id="JSVERSIO">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSRESWOR" id="previous"> < Previous </a>
+	   <a href="js.html#JSVERES5" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Versions  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Version ES5 Notes -->
+	
+	<section id="JSVERES5">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSVERSIO" id="previous"> < Previous </a>
+	   <a href="js.html#JSVERES6" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Version ES5  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Version ES6 Notes -->
+	
+	<section id="JSVERES6">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSVERES5" id="previous"> < Previous </a>
+	   <a href="js.html#JSJSON" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Version ES6  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript JSON Notes -->
+	
+	<section id="JSJSON">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JSVERES6" id="previous"> < Previous </a>
+	   <a href="js.html#JSFORMS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript JSON  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	<!-- JavaScript Introduction Notes -->
+	
+	<section id="JS">
+	<article class="notes">
+	 <hr /><hr />
+	 <div class="heading">
+	   <a href="js.html#JS" id="previous"> < Previous </a>
+	   <a href="js.html#JS" id="next"> Next > </a>
+	 </div>
+	 <h2> JavaScript Introduction  </h2>
+	 
+	 </article>
+    </section>
+	
+	
+	 <footer>
+	    This Page Is Developed By Piyush Raj  &copy 2020.
+	 </footer>
+	 </main>
+	<main id="last">
+	</main>
+	<script src="example-dark-mode.js">
+	</script>
+	<script src="example-white-mode.js">
+	</script>
+	</body> 
+ </html>
