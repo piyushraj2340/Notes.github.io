@@ -7,16 +7,16 @@
  }
  
  body {
-	margin: 0px;
+	  margin: 0px;
     background-color: #40B3A2;	
-	font-family: Verdana,sans-serif;
+	  font-family: Verdana,sans-serif;
  }
  
  
  #sitename {
-	 background-color: #E27D5F;
+	   background-color: #E27D5F;
      padding: 5px 50px;
-	 z-index: 3;
+	   z-index: 3;
  }
  
  #sitename span {
@@ -141,7 +141,7 @@
 	 padding: 0px;
 	 background-color: #E8A87C;
 	 float: left;
-	 width: 22%;
+	 width: 23%;
 	 height: 91vh;
 	 overflow-y: scroll;
 	 overflow-x: hidden;
@@ -223,7 +223,7 @@
  
  
  #contener {
-	 width: 75%;
+	 width: 74%;
 	 float: left;
  }
  
