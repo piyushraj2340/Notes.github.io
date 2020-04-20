@@ -1,18 +1,21 @@
  
  #home {
-	 padding: 10.5px !important;
+	 padding: 20px 13px 2px 13px !important;
 	 background-color: red;
 	 color: #55ee30;
-	 font-size: 25px;
-	 font-weight: bold;
 	 z-index: 2 !important;
 	 border-radius: 10px;
  }
  
+ #home #img-home {
+	 background-image: url("assets/image/home-55ee30.png")
+ }
+ 
  #home:hover {
 	 border: 1px solid red;
-	 padding: 10px !important;
+	 padding: 18px 12px 2px 12px;
  }
+ 
  
  #heading {
 	 padding: 1%;
@@ -67,5 +70,14 @@
 	 font-weight: 400;
  }
  
+ @media screen and (max-width: 1250px) {
+	#heading {
+	  width: 45vw !important;
+	} 
+	
+	.example {
+	  width: 45vw !important;
+	}
+ }
  
  

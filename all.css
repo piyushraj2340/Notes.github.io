@@ -43,7 +43,7 @@
 	 top: 0px;
 	 margin: 0px;
 	 width: 100%;
-	 height: 3.68vw;
+	 height: 50px;
 	 background-color: #85CDCA;
 	 font-size: 20px;
 	 font-family: arial;
@@ -57,25 +57,53 @@
 	 padding: 0 10px;
  }
  
- #nav ul li {
+ #nav ul li:not(#home) {
 	 margin: 0px;
-	 padding: 17px 13px 8px 13px;
+	 padding: 20px 13px 10px 13px;
 	 display: inline-block;
 	 float: left;
 	 z-index: 0;
+	 line-height: 1;
  }
  
- #nav ul li:hover {
-	 padding: 10.5px;
+ #nav ul li:hover:not(#home) {
 	 background-color: blue;
 	 color: #55EE30;
-	 font-size: 25px;
 	 font-weight: bold;
 	 z-index: 1;
 	 border-radius: 10px;
  }
  
-
+ #img-home {
+	 background-image: url("assets/image/home-000.png");
+	 background-repeat: no-repeat;
+	 background-position: 0px 0px;
+	 background-size: 30px 25px;
+     width: 30px;
+     height: 25px;	
+	 position: relative;
+	 top: -5px;
+ }
+ 
+ #home {
+	 margin: 0px;
+	 padding: 20px 13px 2px 13px;
+	 display: inline-block;
+	 float: left;
+	 z-index: 0;
+	 line-height: 1;
+ }
+ 
+ #home:hover {
+	 background-color: blue;
+	 color: #55EE30;
+	 z-index: 1;
+	 border-radius: 10px;
+ }
+ 
+ #home:hover #img-home {
+	 background-image: url("assets/image/home-55ee30.png");
+ }
  
  header a, nav a {
 	 text-decoration: none;
@@ -141,7 +169,7 @@
 	 padding: 0px;
 	 background-color: #E8A87C;
 	 float: left;
-	 width: 22%;
+	 width: 23%;
 	 height: 91vh;
 	 overflow-y: scroll;
 	 overflow-x: hidden;
@@ -212,6 +240,26 @@
 	 background-color: #CCC;
  }
  
+ aside::-webkit-Scrollbar {
+	 width: 10px;	 
+ }
+ 
+ aside::-webkit-Scrollbar-track {
+	 background-color: red;
+	 border-radius: 0 10px 10px 0;
+ }
+ 
+  aside::-webkit-Scrollbar-thumb {
+	 width: 5px;
+	 background-color: #55EE30;
+	 border-radius: 0 10px 10px 0;
+ }
+ 
+ aside::-webkit-Scrollbar-thumb:hover {
+	 width: 5px;
+	 background-color: yellow;
+ }
+ 
  main h1 {
 	 text-align: center;
 	 font-size: 80px;
@@ -223,7 +271,7 @@
  
  
  #contener {
-	 width: 75%;
+	 width: 74%;
 	 float: left;
  }
  
@@ -394,3 +442,54 @@
 	 font-size: 23px;
 	 font-weight: 400;
  }
+ 
+ @media screen and (max-width: 1280px) {
+    aside {
+	   width: 300px;
+	}
+	
+	#contener {
+	   width: 71vw;
+	}
+	
+	main h1 {
+	   font-size: 6.25vw;
+	}
+ }
+ 
+ @media screen and (max-width: 1200px) {
+  #contener {
+     width: 70vw; 
+  }
+ }
+ 
+  @media screen and (max-width: 1140px) {
+  #contener {
+     width: 69vw; 
+  }
+ }
+ 
+ @media screen and (max-width: 1100px) {
+  #contener {
+     width: 68vw; 
+  }
+ }
+ 
+ @media screen and (max-width: 1060px) {
+  #contener {
+     width: 67vw; 
+  }
+ }
+ 
+  @media screen and (max-width: 1020px) {
+  #contener {
+     width: 66vw; 
+  }
+ }
+ 
+ @media screen and (max-width: 990px) {
+  #contener {
+     width: 65vw; 
+  }
+ }
+ 

@@ -5,7 +5,7 @@
 
  
  #about {
-	 padding: 10.5px !important;
+	 padding: 18px 13px 7px 13px !important;
 	 background-color: red;
 	 color: #55ee30;
 	 font-size: 25px;
@@ -16,5 +16,4 @@
  
  #about:hover {
 	 border: 1px solid red;
-	 padding: 10px !important;
  }
