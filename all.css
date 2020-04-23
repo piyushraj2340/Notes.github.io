@@ -7,16 +7,16 @@
  }
  
  body {
-	  margin: 0px;
+	margin: 0px;
     background-color: #40B3A2;	
-	  font-family: Verdana,sans-serif;
+	font-family: Verdana,sans-serif;
  }
  
  
  #sitename {
-	   background-color: #E27D5F;
+	 background-color: #E27D5F;
      padding: 5px 50px;
-	   z-index: 3;
+	 z-index: 3;
  }
  
  #sitename span {
@@ -71,6 +71,36 @@
 	 color: #55EE30;
 	 font-weight: bold;
 	 z-index: 1;
+	 border-radius: 10px;
+ }
+ 
+ #nav ul li:hover:not(#menu) {
+	 
+ }
+ 
+ #menu {
+	 margin: 0 20px;
+	 padding: 10px 10px 1px 10px;
+	 display: inline-block;
+	 float: left;
+	 z-index: 0;
+	 line-height: 1;
+	 position: relative;
+	 left: 0px;
+	 top: 0px;
+	 display: none;
+ }
+ 
+ #menu:hover {
+	 background-color: blue;
+ }
+ 
+ .menu1,.menu2,.menu3 {
+	 width: 35px;
+	 height: 5px;
+	 margin: 6px 0;
+	 background-color: #000;
+	 transition: 0.4s;
 	 border-radius: 10px;
  }
  
@@ -446,50 +476,85 @@
  @media screen and (max-width: 1280px) {
     aside {
 	   width: 300px;
-	}
+ }
 	
 	#contener {
 	   width: 71vw;
-	}
+ }
 	
 	main h1 {
 	   font-size: 6.25vw;
-	}
+ }
  }
  
+ 
+ 
  @media screen and (max-width: 1200px) {
-  #contener {
-     width: 70vw; 
-  }
+    #contener {
+       width: 70vw; 
+ }
  }
  
   @media screen and (max-width: 1140px) {
-  #contener {
-     width: 69vw; 
-  }
+    #contener {
+       width: 69vw; 
+ }
  }
  
  @media screen and (max-width: 1100px) {
-  #contener {
-     width: 68vw; 
-  }
+    #contener {
+       width: 68vw; 
+ }
  }
  
  @media screen and (max-width: 1060px) {
-  #contener {
-     width: 67vw; 
-  }
+    #contener {
+       width: 67vw; 
+ }
  }
  
   @media screen and (max-width: 1020px) {
-  #contener {
-     width: 66vw; 
-  }
+    #contener {
+       width: 66vw; 
+ }
  }
  
  @media screen and (max-width: 990px) {
-  #contener {
-     width: 65vw; 
+    #contener {
+       width: 65vw; 
   }
+  
+    #menu {
+	   display: inline-block;
+ }
+  
+   .open .menu1 {
+       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+       transform: rotate(-45deg) translate(-9px, 6px);
+ }
+
+   .open .menu2 {
+	   opacity: 0;
+ }
+
+   .open .menu3 {
+       -webkit-transform: rotate(45deg) translate(-8px, -8px);
+       transform: rotate(45deg) translate(-8px, -8px);
+ }
+ 
+  .close .menu1 {
+       -webkit-transform: rotate(45deg) translate(-9px, 6px);
+       transform: rotate(0deg) translate(-9px, 6px);
+ }
+
+   .close .menu2 {
+	   opacity: 0;
+ }
+
+   .close .menu3 {
+       -webkit-transform: rotate(-45deg) translate(-8px, -8px);
+       transform: rotate(0deg) translate(-8px, -8px);
+ }
+
  }
  
