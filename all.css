@@ -94,6 +94,7 @@
  #menu0 {
 	padding: 10px 10px 1px 10px; 
 	transition: 0.4s;
+	border-radius: 10px;
  }
  
  .menu1,.menu2,.menu3 {
