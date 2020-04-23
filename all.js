@@ -1,6 +1,7 @@
 "use strict";
 
 function menuOpen(x) {
+  x.classList.toggle("open");
   var menu1 = document.getElementsByClassName("menu1");
   menu1[0].style.backgroundColor = "#55EE30";
   var menu2 = document.getElementsByClassName("menu2");
@@ -9,7 +10,7 @@ function menuOpen(x) {
   menu3[0].style.backgroundColor = "#55EE30";
   var menu = document.getElementById("menu");
   menu.style.backgroundColor = "red";
-//  x.classList.toggle("open");
+  
 }
  
   var menuEvent = document.getElementById("contener");
@@ -32,7 +33,6 @@ function menuClose(x) {
   menu3[0].style.backgroundColor = "#000";
   var menu = document.getElementById("menu");
   menu.style.backgroundColor = "transparent";
-  x.classList.toggle("open");
 }
 
 

@@ -542,7 +542,7 @@
        transform: rotate(45deg) translate(-8px, -8px);
  }
  
-  .close .menu1 {
+ /* .close .menu1 {
        -webkit-transform: rotate(45deg) translate(-9px, 6px);
        transform: rotate(0deg) translate(-9px, 6px);
  }
@@ -556,5 +556,5 @@
        transform: rotate(0deg) translate(-8px, -8px);
  }
 
- }
+ } */
  
