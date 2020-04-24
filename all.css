@@ -94,7 +94,6 @@
  #menu0 {
 	padding: 10px 10px 1px 10px; 
 	transition: 0.4s;
-	border-radius: 10px;
  }
  
  .menu1,.menu2,.menu3 {
@@ -528,36 +527,24 @@
   
   #menu {
 	   display: inline-block;
+	   cursor: pointer;
  }
  
- .open #menu0 {
-	 background-color: red;
+ #menu0 {
+	   border-radius: 10px;
  }
   
-   .open .menu1 {
-       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-       transform: rotate(-45deg) translate(-9px, 6px);
-	   background-color: #55EE30;
- }
+ 
 
-   .open .menu2 {
-	   opacity: 0;
-	   background-color: #55EE30;
- }
-
-   .open .menu3 {
-       -webkit-transform: rotate(45deg) translate(-8px, -8px);
-       transform: rotate(45deg) translate(-8px, -8px);
-	   background-color: #55EE30;
- }
  
  aside {
 	 display: none;
 	 float: none;
 	 z-index: 5;
 	 width: 300px;
-     position: sticky;
-	 top: 50px;
+     position: absolute;
+	 top: 134px;
+	 margin: 0 5px;
  }
  
  #contener {
