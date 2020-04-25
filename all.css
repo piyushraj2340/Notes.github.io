@@ -59,11 +59,10 @@
  
  #nav ul li:not(#home) {
 	 margin: 0px;
-	 padding: 20px 13px 10px 13px;
+	 padding: 20px 13px 7px 13px;
 	 display: inline-block;
 	 float: left;
 	 z-index: 0;
-	 line-height: 1;
  }
  
  #nav ul li:hover:not(#home) {
@@ -83,7 +82,6 @@
 	 display: inline-block;
 	 float: left;
 	 z-index: 0;
-	 line-height: 1;
 	 position: relative;
 	 left: 0px;
 	 top: 0px;
@@ -119,11 +117,10 @@
  
  #home {
 	 margin: 0px;
-	 padding: 20px 13px 2px 13px;
+	 padding: 20px 13px 0px 13px;
 	 display: inline-block;
 	 float: left;
 	 z-index: 0;
-	 line-height: 1;
  }
  
  #home:hover {
@@ -148,18 +145,19 @@
  
  #dark-mode-button {
 	 background-image: url("assets/image/icon-white-button.png");
-	 width: 50px;
-	 height: 50px;
+	 width: 35px;
+	 height: 35px;
 	 background-repeat: no-repeat;
-	 background-size: 50px 50px;
-	 background-position: 0px 0px;
+	 background-size: 35px 35px;
+	 background-position: 10px 10px;
+	 padding: 10px 10px 3px 10px;
  }
  
  #dark-mode-button:hover {
 	 background-image: url("assets/image/icon-dark-button.png");
  }
  
-  #white-mode-button {
+ /* #white-mode-button {
 	 background-image: url("assets/image/icon-dark-button.png");
 	 width: 50px;
 	 height: 50px;
@@ -173,7 +171,7 @@
  
  #white-mode-button:hover {
 	 background-image: url("assets/image/icon-white-button.png");
- }
+ } */
  
  #search[type=search]{
 	 padding: 10px 30px;
