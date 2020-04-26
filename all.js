@@ -15,11 +15,17 @@ var reSize = (function () {
   y < 153;
   y += document.documentElement.scrollTop;
 	
+  
+
   if(window.innerWidth < 990) {  // width condition
-		
+   
+   menuClose();
+  
+  var elem =  document.getElementsByTagName("aside");
+  elem[0].style.display =  "none";
   if(document.body.scrollTop >= 83 || document.documentElement.scrollTop >= 83) {    // scrollTop condition
 		  
-  var count1 = window.innerHeight - 65;
+  var count1 = window.innerHeight - 70;
   var elem =  document.getElementsByTagName("aside");
   elem[0].style.height = count1 + "px";
 }
@@ -29,6 +35,32 @@ var reSize = (function () {
   var elem =  document.getElementsByTagName("aside");
   elem[0].style.height = count1 + "px";
 }
+}
+
+else if(window.innerWidth > 990 || window.innerWidth ) {
+
+  var y = 0;
+  y < 153;
+  y += document.documentElement.scrollTop;
+	
+  if(document.body.scrollTop >= 83 || document.documentElement.scrollTop >= 83) {    // scrollTop condition
+  var count1 = window.innerHeight - 60;
+  var elem =  document.getElementsByTagName("aside");
+  elem[0].style.height = count1 + "px";
+  elem[0].style.display = "block";
+  elem[0].style.position = "sticky";
+  elem[0].style.top = "55px";
+}
+	  
+  else {
+  var count1 = window.innerHeight - (143 - y);
+  var elem =  document.getElementsByTagName("aside");
+  elem[0].style.height = count1 + "px";
+  elem[0].style.display = "block";
+  elem[0].style.position = "sticky";
+  elem[0].style.top = "55px";
+}
+	
 }
    
   else {
@@ -61,6 +93,27 @@ var scRoll = (function() {
   elem[0].style.position = "absolute";
   elem[0].style.top = "134px";
   reSize();
+}
+}
+
+else if(window.innerWidth > 990 || window.innerWidth) {
+	
+  var y = 0;
+  y < 153;
+  y += document.documentElement.scrollTop;  
+  
+  if(document.body.scrollTop >= 83 || document.documentElement.scrollTop >= 83) {    // scrollTop condition
+		  
+  var count1 = window.innerHeight - 60;
+  var elem =  document.getElementsByTagName("aside");
+  elem[0].style.height = count1 + "px";
+  
+}
+	  
+  else {
+  var count1 = window.innerHeight - (143 - y);
+  var elem =  document.getElementsByTagName("aside");
+  elem[0].style.height = count1 + "px";
 }
 }
 	 
