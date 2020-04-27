@@ -48,7 +48,7 @@ function darkMode() {
 	  darkSQlstringcolor();
 	  darkIcondark();
 	}
-
+    
 }
 
 // dark mode
